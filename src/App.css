@@ -1,0 +1,33 @@
+@keyframes underline-slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.hover-underline::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #ffffff; /* Cor da linha */
+  transition: width 1s ease-in-out;
+  width: 0%;
+}
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hove-underline::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #009a7f; /* Cor da linha */
+  transition: width 1s ease-in-out;
+  width: 100%;
+}
+
+.borda{
+  border: 2px solid #009a7f;
+}
+
